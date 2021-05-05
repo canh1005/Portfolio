@@ -23,6 +23,9 @@
           href="./css/owl.carousel.min.css">
     <link rel="stylesheet"
           href="./css/owl.theme.default.min.css">
+    <!-- AOS -->
+    <link rel="stylesheet"
+          href="./css/aos.css">
     <!-- Main CSS -->
     <link rel="stylesheet"
           href="./css/main.css">
@@ -75,16 +78,20 @@
     <section class="home"
              id="home">
         <div class="home__content row">
-            <div class="col-8 home__text">
+            <div class="col-6 home__text">
                 <h2>I'm Nguyen Huu Canh</h2>
                 <p>A Front-end Developer</p>
                 <p>My objective is takes advantages of programming skills and experience to become a professional
                     developer. In addition, I also enjoy learning new technology to improve my programming skills and
                     create a good experience for applications.</p>
-                <button class="btn btn-info">Download CV</button>
+                <a href="./img/Nguyen-Huu-Canh-CV.pdf"
+                   download
+                   class="btn btn-info">Download CV</a>
             </div>
-            <div class="col-4 home__img">
-
+            <div class="col-5 home__img">
+                <img src="./img/Background.png"
+                     alt=""
+                     data-tilt>
             </div>
         </div>
     </section>
@@ -104,7 +111,7 @@
                         <p>
                             <i class="fa fa-map-marker"></i> <span>Address:</span>
                         </p>
-                        <span>Nguyen Huu Canh</span>
+                        <span>Binh Tan, Ho Chi Minh</span>
                     </div>
                 </div>
                 <div class="col-6 content__item">
@@ -136,7 +143,8 @@
             <h1>My Resume</h1>
             <div class="education">
                 <h2>Education</h2>
-                <div class="education__item">
+                <div class="education__item"
+                     data-aos="fade-right">
                     <h4>Ton Duc Thang University</h4>
                     <p>May 2015 - May 2020</p>
                     <ul>
@@ -146,7 +154,7 @@
             </div>
             <div class="experience">
                 <h2>Experience</h2>
-                <div class="experience__item">
+                <div class="experience__item" data-aos="fade-left">
                     <h4>FPT software - internship</h4>
                     <p>April 2018 - July 2018</p>
                     <ul>
@@ -157,7 +165,7 @@
                         <li>Presentation on assigned topic</li>
                     </ul>
                 </div>
-                <div class="experience__item">
+                <div class="experience__item" data-aos="fade-left">
                     <h4>Cybersoft - Cyberlearn Academy</h4>
                     <p>August 2020 - February 2021</p>
                     <ul>
@@ -224,7 +232,8 @@
             </div>
         </div>
     </section>
-    <section class="portfolio container">
+    <section class="portfolio container"
+             id="portfolio">
         <h1>My Portfolio</h1>
         <div class="portfolio__content owl-carousel owl-theme">
             <div class="portfolio__item">
@@ -248,11 +257,11 @@
                 </div>
                 <div class="portfolio__description">
                     <h4>TIX Movie Homepage</h4>
-                    <p>October 2020 - October 2020</p>
+                    <p>April 2021 - Present</p>
                     <ul>
-                        <li>Description:A clone UI website of tix.vn homepage with responsive</li>
+                        <li>Description:A portfolio where you can see my information and my projects</li>
                         <li>Responsibility:Development</li>
-                        <li>Technology: HTML5, CSS3, Bootstrap 4, SASS/SCSS, Responsive</li>
+                        <li>Technology: HTML5, CSS3, Bootstrap 5, SASS/SCSS, Responsive</li>
                     </ul>
                 </div>
             </div>
@@ -284,7 +293,12 @@
     <!-- OWL CAROUSEL JS -->
     <script src="./js/owl.carousel.min.js"></script>
 
-    
+    <!-- AOS JS -->
+    <script src="./js/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <!-- Portfolio carousel -->
     <script>
         $('.owl-carousel').owlCarousel({
             loop: true,
@@ -297,16 +311,18 @@
                 },
                 600: {
                     items: 1,
-                    nav: false
+                    nav: true
                 },
                 1000: {
                     items: 1,
                     nav: true,
-                    loop: false
                 }
             }
         })
     </script>
+    <!-- Vanilla-tilt js -->
+    <script type="text/javascript"
+            src="./js/vanilla-tilt.min.js"></script>
 </body>
 
 </html>

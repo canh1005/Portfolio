@@ -4,8 +4,13 @@
     position: fixed;
     z-index: 10;
     left: 10%;
+    
     .navbar{
         border-radius: 16px;
+        background: rgba($color: $color-white-0, $alpha: 0.5)!important;
+        backdrop-filter: blur(10px);
+        margin-top: $mg-1;
+        padding: $pd-2;
     }
     .header__content{
         justify-content: space-between;
