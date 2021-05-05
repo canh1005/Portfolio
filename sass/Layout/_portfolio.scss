@@ -1,0 +1,23 @@
+.portfolio{
+    background: rgba($color: $color-white-0, $alpha: 0.5);
+    backdrop-filter: blur(10px);
+    margin-top: $mg-3;
+    border-radius: 16px;
+    padding: $pd-2;
+    .portfolio__img{
+        min-height: 600px;
+        background-position: center!important;
+        background-repeat: no-repeat!important;
+        background-size: cover!important;
+        &:hover .portfolio__description{
+            display: none!important;
+        }
+    }
+    .portfolio__img.project1{
+        background: url('../../img/ticket-booking.png');
+    }
+    .portfolio__img.project2{
+        background: url('../../img/tix-homepage.png');
+    }
+    
+}

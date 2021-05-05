@@ -1,0 +1,32 @@
+.skill{
+    background: rgba($color: $color-white-0, $alpha: 0.5);
+    backdrop-filter: blur(10px);
+    margin-top: $mg-3;
+    border-radius: 16px;
+    padding: $pd-2;
+    .skill__item{
+        ul{
+            border-radius: 16px;
+        }
+        li{
+            border-radius: 16px;
+            padding: $pd-5;
+            margin: $mg-0 0;
+        }
+        img{
+            width: 100px;
+            height: 55px;
+            padding: $pd-0;
+            border: solid 2px $color-green-0;
+            border-radius: 16px;
+        }
+        .skill__text{
+            text-align: center;
+            padding: $pd-2;
+            border: solid 2px $color-green-0;
+            background-color: $color-white-0;
+            border-radius: 16px;
+        }
+        
+    }
+}

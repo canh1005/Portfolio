@@ -1,0 +1,45 @@
+.about{
+    background: rgba($color: $color-white-0, $alpha: 0.5);
+    backdrop-filter: blur(10px);
+    margin-top: $mg-3;
+    border-radius: 16px;
+    .content__item{
+        div{
+            display: flex;
+            align-items: center;
+        }
+        p{
+            background-color: $color-green-0;
+            margin: $mg-1;
+            padding: $pd-0;
+            min-width: 100px;
+        }
+    }
+    .about__icon{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        a{
+            display: inline-block;
+            margin: $mg-3;
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            background-color: $color-pink-1;
+            transition: all .5s;
+            &:first-child:hover{
+                background-color: $color-blue-1;
+                color: $color-blue-0;
+            }
+            &:last-child:hover{
+                background-color: $color-black-0;
+                color: $color-white-0;
+            }
+            &:nth-child(2):hover{
+                background-color: $color-blue-0;
+                color: $color-white-0;
+            }
+        }
+    }
+}

@@ -1,0 +1,12 @@
+.home{
+    padding-top: 100px;
+    position: relative;
+    .home__text{
+        margin-left: $mg-5;
+        border-radius: 16px;
+        padding: $pd-3;
+        position: relative;
+        background: rgba($color: $color-white-0, $alpha: 0.5);
+        backdrop-filter: blur(10px);
+    }
+}
