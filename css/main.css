@@ -257,7 +257,7 @@ body h1 {
 .portfolio .portfolio__description {
   position: absolute;
   width: 400px;
-  height: 300px;
+  min-height: 300px;
   bottom: -100%;
   left: 0;
   background: rgba(255, 255, 255, 0.5);
@@ -266,5 +266,18 @@ body h1 {
   padding: 15px;
   opacity: 0;
   transition: all .5s;
+}
+
+.contact {
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(10px);
+  margin-top: 20px;
+  border-radius: 16px;
+  padding: 15px;
+}
+
+.contact #messageInput {
+  width: 80%;
+  height: 100px;
 }
 /*# sourceMappingURL=main.css.map */
