@@ -1,8 +1,5 @@
 .about{
-    background: rgba($color: $color-white-0, $alpha: 0.5);
-    backdrop-filter: blur(10px);
-    margin-top: $mg-3;
-    border-radius: 16px;
+    @include bgGlass();
     .content__item{
         div{
             display: flex;

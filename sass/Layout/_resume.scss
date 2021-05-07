@@ -1,9 +1,5 @@
 .resume{
-    background: rgba($color: $color-white-0, $alpha: 0.5);
-    backdrop-filter: blur(10px);
-    margin-top: $mg-3;
-    border-radius: 16px;
-    padding: $pd-2;
+    @include bgGlass();
     .resume__content{
         h2{
           border-bottom: solid 1px $color-black-0;  

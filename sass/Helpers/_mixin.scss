@@ -1,0 +1,8 @@
+@mixin bgGlass(){
+    background: rgba($color: $color-white-0, $alpha: 0.5);
+    backdrop-filter: blur(10px);
+    margin-top: $mg-5;
+    border-radius: 16px;
+    padding: $pd-5;
+    box-shadow: 0 10px 20px rgba($color: $color-black-0, $alpha: 0.5);
+}

@@ -32,6 +32,7 @@
 </head>
 
 <body>
+    <!-- Header -->
     <section class="header">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid header__content">
@@ -70,11 +71,16 @@
                             <a class="nav-link"
                                href="#portfolio">Portfolio</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link"
+                               href="#contact">Contact</a>
+                        </li>
                     </ul>
                 </div>
             </div>
         </nav>
     </section>
+    <!-- Home -->
     <section class="home"
              id="home">
         <div class="home__content row">
@@ -95,6 +101,7 @@
             </div>
         </div>
     </section>
+    <!-- About -->
     <section class="about container"
              id="about">
         <div class="about__content">
@@ -137,6 +144,7 @@
             </div>
         </div>
     </section>
+    <!-- Resume -->
     <section class="resume container"
              id="resume">
         <div class="resume__content">
@@ -185,6 +193,7 @@
             </div>
         </div>
     </section>
+    <!-- Skill -->
     <section class="skill container"
              id="skill">
         <div class="skill__content">
@@ -234,6 +243,7 @@
             </div>
         </div>
     </section>
+    <!-- Portfolio -->
     <section class="portfolio container"
              id="portfolio">
         <h1>My Portfolio</h1>
@@ -288,27 +298,28 @@
             </div>
         </div>
     </section>
-    <!-- <section class="contact container"
+    <!-- Contact -->
+    <section class="contact container"
              id="contact">
         <h1>Get touch with me</h1>
         <div class="contact__content">
-            <form>
-                <div class="row">
-                    <div class="col-4">
+            <form id="contact__form">
+                <div class="row mb-1">
+                    <div class="col-12 col-md-4">
                         <label for="emailInput"
-                               class="form-label">Email address</label>
+                               class="form-label">Email</label>
                         <input type="email"
                                class="form-control"
                                id="emailInput">
                     </div>
-                    <div class="col-4">
+                    <div class="col-12 col-md-4">
                         <label for="firstNameInput"
                                class="form-label">First Name</label>
                         <input type="text"
                                class="form-control"
                                id="firstNameInput">
                     </div>
-                    <div class="col-4">
+                    <div class="col-12 col-md-4">
                         <label for="lastNameInput"
                                class="form-label">Last Name</label>
                         <input type="text"
@@ -318,15 +329,22 @@
                     <div class="col-12">
                         <label for="messageInput"
                                class="form-label">Message</label>
-                        <input type="text"
+                        <textarea type="text"
                                class="form-control"
-                               id="messageInput">
+                               id="messageInput"></textarea>
                     </div>
                 </div>
-                <button class="btn btn-success">Send</button>
+                <button class="btn btn-success"
+                        onclick="submitEmail()">Send</button>
             </form>
         </div>
-    </section> -->
+    </section>
+    <!-- Footer -->
+    <footer>
+        Copyright <i class="fa fa-copyright"></i> 2021 by Nguyen Huu Canh
+    </footer>
+
+
     <!-- Jquery -->
     <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
             integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="
@@ -368,6 +386,10 @@
     <!-- Vanilla-tilt js -->
     <script type="text/javascript"
             src="./js/vanilla-tilt.min.js"></script>
+    <!-- SMTP Js -->
+    <script src="./js/smtp.js"></script>
+    <!-- Optional JS -->
+    <script src="./js/main.js"></script>
 </body>
 
 </html>

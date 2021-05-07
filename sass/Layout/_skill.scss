@@ -1,9 +1,5 @@
 .skill{
-    background: rgba($color: $color-white-0, $alpha: 0.5);
-    backdrop-filter: blur(10px);
-    margin-top: $mg-3;
-    border-radius: 16px;
-    padding: $pd-2;
+    @include bgGlass();
     .skill__item{
         ul{
             border-radius: 16px;

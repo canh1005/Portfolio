@@ -19,7 +19,7 @@ body::before {
   left: 10%;
   top: 5%;
   width: 80%;
-  min-height: 450vh;
+  min-height: 540vh;
   border-radius: 16px;
   background-color: #fff;
   opacity: 0.5;
@@ -27,6 +27,7 @@ body::before {
 
 body h1 {
   text-align: center;
+  margin: 50px;
   background: linear-gradient(to left, #2196f3, #ffeb07, #ff00eb, #f32170);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
@@ -63,12 +64,14 @@ body h1 {
 }
 
 .home .home__text {
-  margin-left: 30px;
-  border-radius: 16px;
-  padding: 20px;
   position: relative;
   background: rgba(255, 255, 255, 0.5);
   backdrop-filter: blur(10px);
+  margin-top: 30px;
+  border-radius: 16px;
+  padding: 30px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+  margin-left: 30px;
 }
 
 .home .home__img {
@@ -78,8 +81,10 @@ body h1 {
 .about {
   background: rgba(255, 255, 255, 0.5);
   backdrop-filter: blur(10px);
-  margin-top: 20px;
+  margin-top: 30px;
   border-radius: 16px;
+  padding: 30px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
 }
 
 .about .content__item div {
@@ -129,9 +134,10 @@ body h1 {
 .resume {
   background: rgba(255, 255, 255, 0.5);
   backdrop-filter: blur(10px);
-  margin-top: 20px;
+  margin-top: 30px;
   border-radius: 16px;
-  padding: 15px;
+  padding: 30px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
 }
 
 .resume .resume__content h2 {
@@ -167,9 +173,10 @@ body h1 {
 .skill {
   background: rgba(255, 255, 255, 0.5);
   backdrop-filter: blur(10px);
-  margin-top: 20px;
+  margin-top: 30px;
   border-radius: 16px;
-  padding: 15px;
+  padding: 30px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
 }
 
 .skill .skill__item ul {
@@ -201,9 +208,10 @@ body h1 {
 .portfolio {
   background: rgba(255, 255, 255, 0.5);
   backdrop-filter: blur(10px);
-  margin-top: 20px;
+  margin-top: 30px;
   border-radius: 16px;
-  padding: 15px;
+  padding: 30px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
 }
 
 .portfolio .portfolio__content {
@@ -271,13 +279,22 @@ body h1 {
 .contact {
   background: rgba(255, 255, 255, 0.5);
   backdrop-filter: blur(10px);
-  margin-top: 20px;
+  margin-top: 30px;
   border-radius: 16px;
-  padding: 15px;
+  padding: 30px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
 }
 
 .contact #messageInput {
   width: 80%;
   height: 100px;
+  resize: none;
+}
+
+footer {
+  position: absolute;
+  left: 15%;
+  margin-top: 30px;
+  color: #fff;
 }
 /*# sourceMappingURL=main.css.map */
