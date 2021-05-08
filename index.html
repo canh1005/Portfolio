@@ -84,7 +84,7 @@
     <section class="home"
              id="home">
         <div class="home__content row">
-            <div class="col-6 home__text">
+            <div class="col-12 col-md-7 home__text">
                 <h2>I'm Nguyen Huu Canh</h2>
                 <p>A Front-end Developer</p>
                 <p>My objective is takes advantages of programming skills and experience to become a professional
@@ -94,7 +94,7 @@
                    download
                    class="btn btn-info">Download CV</a>
             </div>
-            <div class="col-5 home__img">
+            <div class="col-12 col-md-4 home__img">
                 <img src="./img/Background.png"
                      alt=""
                      data-tilt>
@@ -106,8 +106,8 @@
              id="about">
         <div class="about__content">
             <h1>About Me</h1>
-            <div class="row">
-                <div class="col-6 content__item">
+            <div class="row about__item">
+                <div class="col-12 col-lg-6 content__item">
                     <div>
                         <p>
                             <i class="fa fa-user"></i> <span>Name:</span>
@@ -121,7 +121,7 @@
                         <span>Binh Tan, Ho Chi Minh</span>
                     </div>
                 </div>
-                <div class="col-6 content__item">
+                <div class="col-12 col-lg-6 content__item">
                     <div>
                         <p>
                             <i class="fa fa-envelope"></i> <span>Email:</span>
@@ -201,43 +201,71 @@
             <div class="skill__item">
                 <ul class="list-group">
                     <li class="list-group-item">
-                        <span>HTML/CSS</span>
-                        <span><img src="./img/html5.png"
-                                 alt="skill-logo"></span>
-                        <span><img src="./img/CSS3.png"
-                                 alt="skill-logo"></span>
-                        <span><img src="./img/BS.png"
-                                 alt="skill-logo"></span>
-                        <span><img src="./img/sass.jpg"
-                                 alt="skill-logo"></span>
-                        <span class="skill__text">Responsive</span>
+                        <div class="skill__header">
+                            <span>HTML/CSS</span>
+                        </div>
+                        <div class="skill__body row">
+                            <span class="col-2"><img src="./img/html5.png"
+                                     alt="skill-logo"></span>
+                            <span class="col-2"><img src="./img/CSS3.png"
+                                     alt="skill-logo"></span>
+                            <span class="col-2"><img src="./img/BS.png"
+                                     alt="skill-logo"></span>
+                            <span class="col-2"><img src="./img/sass.jpg"
+                                     alt="skill-logo"></span>
+                            <span class="skill__text col-2">Responsive</span>
+                        </div>
                     </li>
                     <li class="list-group-item list-group-item-primary">
-                        <span>JavaScript</span>
-                        <span class="skill__text">ES5/ES6</span>
-                        <span class="skill__text">RestfulAPI</span>
-                        <span class="skill__text">Jquery</span>
-                        <span class="skill__text">Axios</span>
+                        <div class="skill__header">
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="skill__body row">
+                            <span class="skill__text col-2">ES5/ES6</span>
+                            <span class="skill__text col-2">RestfulAPI</span>
+                            <span class="skill__text col-2">Jquery</span>
+                            <span class="skill__text col-2">Axios</span>
+                        </div>
                     </li>
                     <li class="list-group-item list-group-item-secondary">
-                        <span>ReacJS</span>
-                        <span class="skill__text">ReactJS Basic</span>
-                        <span class="skill__text">Redux</span>
-                        <span class="skill__text">React Hooks</span>
-                        <span class="skill__text">React Router</span>
+                        <div class="skill__header">
+                            <span>ReacJS</span>
+                        </div>
+
+                        <div class="skill__body row">
+                            <span class="skill__text col-2">ReactJS Basic</span>
+                            <span class="skill__text col-2">Redux</span>
+                            <span class="skill__text col-2">React Hooks</span>
+                            <span class="skill__text col-2">React Router</span>    
+                        </div>
                     </li>
                     <li class="list-group-item list-group-item-success">
-                        <span>Version control</span>
-                        <span class="skill__text">Git</span>
+                        <div class="skill__header">
+                            <span>Version control</span>
+                        </div>
+                        <div class="skill__body row">
+                            <span class="skill__text col-2">Git</span>
+
+                        </div>
                     </li>
                     <li class="list-group-item list-group-item-danger">
-                        <span>Soft skill</span>
-                        <span class="skill__text">Self-study</span>
-                        <span class="skill__text">Teamwork</span>
+                        <div class="skill__header">
+                            <span>Soft skill</span>
+                        </div>
+                        <div class="skill__body row">
+                            <span class="skill__text col-2">Self-study</span>
+                            <span class="skill__text col-2">Teamwork</span>
+
+                        </div>
                     </li>
                     <li class="list-group-item list-group-item-warning">
-                        <span>Language</span>
-                        <span class="skill__text">English TOEIC 560</span>
+                        <div class="skill__header">
+                            <span>Language</span>
+                        </div>
+                        <div class="skill__body row">
+                            <span class="skill__text col-2">English TOEIC 560</span>
+                        </div>
+
                     </li>
                 </ul>
             </div>
@@ -330,8 +358,8 @@
                         <label for="messageInput"
                                class="form-label">Message</label>
                         <textarea type="text"
-                               class="form-control"
-                               id="messageInput"></textarea>
+                                  class="form-control"
+                                  id="messageInput"></textarea>
                     </div>
                 </div>
                 <button class="btn btn-success"

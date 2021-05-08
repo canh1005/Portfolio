@@ -40,3 +40,29 @@
         }
     }
 }
+@media screen and (max-width:991px) {
+    #about{
+        .about__content{
+            .about__item{
+                font-size: 12px;
+                width: 85%;
+                margin: auto;
+            }
+        }
+    }
+}
+@media screen and (max-width:360px) {
+    #about{
+        .about__content{
+            .about__item{
+                font-size: 11px;
+                overflow: hidden;
+            }
+            .content__item{
+                div{
+                    flex-direction: column;
+                }
+            }
+        }
+    }
+}

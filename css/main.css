@@ -19,7 +19,7 @@ body::before {
   left: 10%;
   top: 5%;
   width: 80%;
-  min-height: 540vh;
+  min-height: 575vh;
   border-radius: 16px;
   background-color: #fff;
   opacity: 0.5;
@@ -58,9 +58,32 @@ body h1 {
   flex-grow: unset;
 }
 
+@media screen and (max-width: 375px) {
+  .header {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    width: 75%;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .header {
+    width: 55%;
+  }
+}
+
 .home {
   padding-top: 100px;
   position: relative;
+}
+
+.home .home__content {
+  justify-content: center;
+  align-items: flex-end;
 }
 
 .home .home__text {
@@ -76,6 +99,15 @@ body h1 {
 
 .home .home__img {
   text-align: center;
+}
+
+@media only screen and (max-width: 767px) {
+  #home .home__content {
+    flex-direction: column-reverse;
+  }
+  #home .home__content .home__text {
+    width: 85%;
+  }
 }
 
 .about {
@@ -131,6 +163,24 @@ body h1 {
   color: #fff;
 }
 
+@media screen and (max-width: 991px) {
+  #about .about__content .about__item {
+    font-size: 12px;
+    width: 85%;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  #about .about__content .about__item {
+    font-size: 11px;
+    overflow: hidden;
+  }
+  #about .about__content .content__item div {
+    flex-direction: column;
+  }
+}
+
 .resume {
   background: rgba(255, 255, 255, 0.5);
   backdrop-filter: blur(10px);
@@ -161,6 +211,7 @@ body h1 {
 }
 
 .resume .education__item, .resume .experience__item {
+  width: 80% !important;
   background: rgba(255, 255, 255, 0.7);
   backdrop-filter: blur(10px);
   margin-top: 20px;

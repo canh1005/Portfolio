@@ -1,6 +1,10 @@
 .home{
     padding-top: 100px;
     position: relative;
+    .home__content{
+        justify-content: center;
+        align-items: flex-end;
+    }
     .home__text{
         position: relative;
         @include bgGlass();
@@ -8,5 +12,13 @@
     }
     .home__img{
         text-align: center;
+    }
+}
+@media only screen and (max-width:767px){
+    #home .home__content{
+        flex-direction: column-reverse;
+        .home__text{
+            width: 85%;
+        }
     }
 }
