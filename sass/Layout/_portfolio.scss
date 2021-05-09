@@ -53,4 +53,55 @@
         opacity: 0;
         transition: all .5s;
     }
+    .hideOnDesktop.portfolio__content{
+        position: relative;
+        width: 80%;
+        margin: auto;
+        height: 500px;
+        box-shadow: unset;
+        .portfolio__item{
+            position: relative;
+            .project1,.project2,.project3{
+                position: relative;
+                clip-path: unset;
+                height: 500px;
+                background-size: cover!important;
+                background-position: center!important;
+                background-repeat: no-repeat!important;
+            }
+            .project1{
+                background: url('../../img/ticket-booking.png');
+            }
+            .project2{
+                background: url('../../img/tix-homepage.png');
+            }
+            .project3{
+                background: url('../../img/P3.png');
+            }
+        }
+        .portfolio__description{
+            position: absolute;
+            font-size: 10px;
+        }
+    }
+}
+@media screen and (max-width:1300px) {
+    .hideOnMoblie{
+        display: none;
+    }
+}
+@media screen and (min-width:1302px) {
+    .hideOnDesktop{
+        display: none;
+    }
+    .owl-carousel.owl-loaded{
+        display: none!important;
+    }
+}
+@media screen and (min-width:375px) and (max-width:766px) {
+    .hideOnDesktop{
+        .portfolio__description{
+            width: auto;
+        }
+    }
 }

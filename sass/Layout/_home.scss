@@ -8,7 +8,62 @@
     .home__text{
         position: relative;
         @include bgGlass();
-        margin-left: $mg-5;
+        button{
+            position: relative;
+            width: 155px;
+            height: 50px;
+            border: none;
+            &:hover a::before{
+                transform: skewX(45deg) translateX(200%);
+            }
+            &::before{
+                content: '';
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+                bottom: -5px;
+                width: 30%;
+                height: 10px;
+                background: $color-green-0;
+                border-radius: 10px;
+                transition: all .5s;
+            }
+            &:hover::before{
+                bottom: 0;
+                height: 100%;
+                width: 100%;
+                border-radius: 30px;
+                
+            }
+        }
+        a{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: rgba($color: $color-blue-0, $alpha: 0.5);
+            border-radius: 16px;
+            transition: all .5s;
+            backdrop-filter: blur(10px);
+            &:hover{
+                letter-spacing: 1px;
+            }
+            &::before{
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 50%;
+                height: 100%;
+                background: linear-gradient(to left, rgba(255,255,255,0.15),transparent);
+                transform: skewX(45deg) translateX(0);
+                transition: all .5s;
+            }
+        }
     }
     .home__img{
         text-align: center;
@@ -17,8 +72,5 @@
 @media only screen and (max-width:767px){
     #home .home__content{
         flex-direction: column-reverse;
-        .home__text{
-            width: 85%;
-        }
     }
 }

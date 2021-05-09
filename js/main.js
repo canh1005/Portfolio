@@ -20,7 +20,7 @@ function emailSend(email, firstName, lastName, message) {
 
 }
 
-function resetInput(){
+function resetInput() {
     getEle("emailInput").value = '';
     getEle('firstNameInput').value = '';
     getEle('lastNameInput').value = '';
@@ -29,4 +29,13 @@ function resetInput(){
 
 function getEle(id) {
     return document.getElementById(id);
+}
+
+let li = document.getElementsByClassName('nav-link');
+for (var i = 0; i < li.length; i++) {
+    li[i].addEventListener("click", function () {
+        let current = document.getElementsByClassName("active");
+        current[0].className = current[0].className.replace(" active", "");
+        this.className += " active";
+    });
 }
