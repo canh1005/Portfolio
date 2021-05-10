@@ -3,26 +3,60 @@
     .skill__item{
         ul{
             border-radius: 16px;
-        }
-        li{
-            border-radius: 16px;
-            padding: $pd-5;
-            margin: $mg-0 0;
+            li{
+                width: 20%;
+                margin: auto;
+                &:hover .skill__text{
+                    display: flex;
+                }
+                &:hover .skill__logo{
+                    display: flex;
+                }
+                &:hover{
+                    width: 100%;
+                }
+            }
         }
         img{
-            width: 100px;
-            height: 55px;
+            width: 100%;
+            height: 100%;
             padding: $pd-0;
+        }
+        .skill__logo,.skill__text{
+            width: 110px;
+            height: 50px;
+            margin-right: $mg-3;
             border: solid 2px $color-green-0;
             border-radius: 16px;
+            transition: all .3s;
+            display: none;
         }
         .skill__text{
+            @include text($color-black-0,$fs-2,$fw-bold-0);
             text-align: center;
-            padding: $pd-2;
-            border: solid 2px $color-green-0;
+            line-height: 47px;
             background-color: $color-white-0;
-            border-radius: 16px;
         }
-        
+        .skill__text-long{
+            width: 250px;
+        }
+        .skill__header{
+            text-align: center;
+        }
+        .skill__body{
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
+@media screen and (max-width:768px) and (orientation: portrait){
+    .skill{
+        .skill__item{
+            ul{
+                li{
+                    width: 50%;
+                }
+            }
+        }
     }
 }

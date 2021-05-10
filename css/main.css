@@ -33,6 +33,15 @@ body h1 {
   margin: 30px auto;
 }
 
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 12px;
+  }
+  h1 {
+    font-size: 16px;
+  }
+}
+
 .header {
   width: 80%;
   margin: auto;
@@ -205,12 +214,13 @@ body h1 {
 
 .about .about__icon a {
   display: inline-block;
-  margin: 20px;
+  margin-right: 5px;
   width: 32px;
   height: 32px;
   border-radius: 50%;
   background-color: #f32170;
   transition: all .5s;
+  line-height: 30px;
 }
 
 .about .about__icon a:first-child:hover {
@@ -236,7 +246,7 @@ body h1 {
   }
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 500px) {
   #about .about__content .about__item {
     font-size: 11px;
     overflow: hidden;
@@ -299,26 +309,65 @@ body h1 {
   border-radius: 16px;
 }
 
-.skill .skill__item li {
-  border-radius: 16px;
-  padding: 30px;
-  margin: 5px 0;
+.skill .skill__item ul li {
+  width: 20%;
+  margin: auto;
+}
+
+.skill .skill__item ul li:hover .skill__text {
+  display: flex;
+}
+
+.skill .skill__item ul li:hover .skill__logo {
+  display: flex;
+}
+
+.skill .skill__item ul li:hover {
+  width: 100%;
 }
 
 .skill .skill__item img {
-  width: 100px;
-  height: 55px;
+  width: 100%;
+  height: 100%;
   padding: 5px;
+}
+
+.skill .skill__item .skill__logo, .skill .skill__item .skill__text {
+  width: 110px;
+  height: 50px;
+  margin-right: 20px;
   border: solid 2px #49a09d;
   border-radius: 16px;
+  transition: all .3s;
+  display: none;
 }
 
 .skill .skill__item .skill__text {
+  color: #000;
+  font-size: 14px;
+  font-weight: 400;
   text-align: center;
-  padding: 15px;
-  border: solid 2px #49a09d;
+  line-height: 47px;
   background-color: #fff;
-  border-radius: 16px;
+}
+
+.skill .skill__item .skill__text-long {
+  width: 250px;
+}
+
+.skill .skill__item .skill__header {
+  text-align: center;
+}
+
+.skill .skill__item .skill__body {
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 768px) and (orientation: portrait) {
+  .skill .skill__item ul li {
+    width: 50%;
+  }
 }
 
 .portfolio {

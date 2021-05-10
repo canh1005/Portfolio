@@ -6,3 +6,9 @@
     padding: $pd-5;
     box-shadow: 0 10px 20px rgba($color: $color-black-0, $alpha: 0.5);
 }
+
+@mixin text($color,$fs,$fw){
+    color: $color;
+    font-size: $fs;
+    font-weight: $fw;
+}

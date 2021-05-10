@@ -19,12 +19,13 @@
         text-align: center;
         a{
             display: inline-block;
-            margin: $mg-3;
+            margin-right: $mg-0;
             width: 32px;
             height: 32px;
             border-radius: 50%;
             background-color: $color-pink-1;
             transition: all .5s;
+            line-height: 30px;
             &:first-child:hover{
                 background-color: $color-blue-1;
                 color: $color-blue-0;
@@ -51,7 +52,7 @@
         }
     }
 }
-@media screen and (max-width:360px) {
+@media screen and (max-width:500px) {
     #about{
         .about__content{
             .about__item{
