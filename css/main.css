@@ -515,6 +515,10 @@ body h1 {
   resize: none;
 }
 
+.contact .inputNoti {
+  color: #f32170;
+}
+
 .footer {
   margin-top: 30px;
   color: #fff;

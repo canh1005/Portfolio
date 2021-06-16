@@ -143,7 +143,7 @@
                 </div>
                 <div class="about__icon">
                     <a href="https://www.facebook.com/nguyen.huucanh.52/"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-skype"></i></a>
+                    <a href="https://join.skype.com/invite/l5yf0TE6CvFE"><i class="fab fa-skype"></i></a>
                     <a href="https://github.com/canh1005"><i class="fab fa-github"></i></a>
                 </div>
             </div>
@@ -388,6 +388,9 @@
                  id="contact">
             <h1>Get touch with me</h1>
             <div class="contact__content">
+                <span class="noti alert alert-info"
+                      style="display: none;"
+                      id="noti"></span>
                 <form id="contact__form">
                     <div class="row mb-1">
                         <div class="col-12 col-md-4">
@@ -396,6 +399,8 @@
                             <input type="email"
                                    class="form-control"
                                    id="emailInput">
+                            <span class="inputNoti"
+                                  id="emailNoti"></span>
                         </div>
                         <div class="col-12 col-md-4">
                             <label for="firstNameInput"
@@ -403,6 +408,8 @@
                             <input type="text"
                                    class="form-control"
                                    id="firstNameInput">
+                            <span class="inputNoti"
+                                  id="firstNameNoti"></span>
                         </div>
                         <div class="col-12 col-md-4">
                             <label for="lastNameInput"
@@ -410,6 +417,8 @@
                             <input type="text"
                                    class="form-control"
                                    id="lastNameInput">
+                            <span class="inputNoti"
+                                  id="lastNameNoti"></span>
                         </div>
                         <div class="col-12">
                             <label for="messageInput"
@@ -417,10 +426,13 @@
                             <textarea type="text"
                                       class="form-control"
                                       id="messageInput"></textarea>
+                            <span class="inputNoti"
+                                  id="messageNoti"></span>
                         </div>
                     </div>
                     <button class="btn btn-success"
-                            onclick="submitEmail()">Send</button>
+                            onclick="submitEmail()"
+                            type="button">Send</button>
                 </form>
             </div>
         </section>
@@ -473,6 +485,7 @@
     <!-- SMTP Js -->
     <script src="./js/smtp.js"></script>
     <!-- Optional JS -->
+    <script src="./js/Validation.js"></script>
     <script src="./js/main.js"></script>
 </body>
 
